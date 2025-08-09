@@ -1,5 +1,6 @@
 #Assets
-uploads
-data/*
-data/
+/uploads
+/uploads/*
+/data/*
+/data/
 node_modules
