@@ -1,1 +1,26 @@
-[]
+[
+  {
+    "username": "Hkers",
+    "avatar": "/uploads/avatars/avatar-1754724682944-408912829.jpg",
+    "text": "大家好",
+    "attachments": [],
+    "timestamp": "2025-08-09T07:35:04.609Z",
+    "id": "h7tss3cpndi1754724904609"
+  },
+  {
+    "username": "周小兮",
+    "avatar": "/uploads/avatars/avatar-1754465175518-972552972.jpg",
+    "text": "好你妈",
+    "attachments": [],
+    "timestamp": "2025-08-09T07:35:45.990Z",
+    "id": "m32w0yyn1w81754724945991"
+  },
+  {
+    "username": "周小兮",
+    "avatar": "/uploads/avatars/avatar-1754465175518-972552972.jpg",
+    "text": "傻逼",
+    "attachments": [],
+    "timestamp": "2025-08-09T07:35:49.494Z",
+    "id": "14z205ap4bd1754724949494"
+  }
+]

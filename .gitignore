@@ -1,10 +1,8 @@
-<<<<<<< HEAD
 #Assets
-uploads/attachments
-uploads/avatars
-
-=======
->>>>>>> bc31316eac5b51831c89137509345f203c419c17
+uploads/
+uploads/*
+data/
+data/*
 # Logs
 logs
 *.log

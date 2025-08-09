@@ -383,7 +383,7 @@ async function saveSettings() {
   localStorage.setItem('username', newUsername)
   localStorage.setItem('avatar', newAvatar)
 
-  usernameDisplay.textContent = newUsername
+  document.getElementById('username').textContent = newUsername
   document.getElementById('user-avatar').src = newAvatar
   avatarPreview.src = newAvatar
   fetchOnlineUsers()

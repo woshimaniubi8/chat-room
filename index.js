@@ -68,6 +68,7 @@ const MESSAGES_FILE = path.join(DATA_DIR, 'messages.json')
 const NOTICE_FILE = path.join(DATA_DIR, 'notice.json')
 const USERS_FILE = path.join(DATA_DIR, 'users.json')
 if (!fs.existsSync(MESSAGES_FILE)) fs.writeFileSync(MESSAGES_FILE, '[]', 'utf-8')
+if (!fs.existsSync(MESSAGES_FILE)) fs.writeFileSync(NOTICE_FILE, '{"text":"欢迎加入聊天室！你可以点击右上角的设置按钮自定义你的用户名和头像。<br><h4 class=\"sys_msg\">信息支持html标签哦~</h4>","time":"2025-08-09T07:26:33.991Z"}', 'utf-8')
 if (!fs.existsSync(USERS_FILE)) fs.writeFileSync(USERS_FILE, '[]', 'utf-8')
 
 // Multer
