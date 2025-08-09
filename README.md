@@ -1,6 +1,12 @@
 # chat-room
 基于Node.js与HTML构建的在线公共聊天室
 
+
+
+**一个Demo：[聊天室](https://mc-jp.woshisb.eu.org:3022/)**
+
+
+
 ![PC](public/pc-screen.png)
 
 ![MOB](public/mob-screen.png)
