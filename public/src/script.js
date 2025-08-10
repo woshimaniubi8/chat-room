@@ -45,6 +45,23 @@ function initUserConfig() {
   avatarInput.value = userConfig.avatar
 }
 
+function initLocalMessages() {
+  let localMessages = []
+  localMessages = localStorage.getItem('message_data')
+  if (localMessages) {
+    try {
+      JSON.parse(localMessages).forEach((message) => {
+        const isSelf = message.username === userConfig.username
+        displayMessage(message, isSelf)
+      })
+      lattttMessages = JSON.parse(localMessages)
+    } catch (e) {
+      console.error('解析本地消息失败:', e)
+      localMessages = []
+    }
+  }
+}
+
 function displayMessage(message, isSelf = false) {
   const messagebbb = document.createElement('div')
   messagebbb.classList.add('message')
@@ -196,8 +213,8 @@ async function fetchMessages() {
     const response = await fetch(`${SRC_URL}/messages`)
     if (!response.ok) throw new Error('获取消息失败')
 
-    const newMessages = await response.json()
-
+    const responseText = await response.text()
+    const newMessages = responseText ? JSON.parse(responseText) : []
     // 检测新消息
     const addedMessages = newMessages.filter(
       (newMsg) =>
@@ -210,11 +227,12 @@ async function fetchMessages() {
     addedMessages.forEach((message) => {
       const isSelf = message.username === userConfig.username
       displayMessage(message, isSelf)
-      console.log('渲染新消息', message)
+      // console.log('渲染新消息', message)
     })
 
     // 更新消息记录
-    lattttMessages = newMessages
+    localStorage.setItem('message_data', responseText)
+    lattttMessages = responseText ? JSON.parse(responseText) : newMessages
   } catch (error) {
     toastr.error('获取消息失败:' + error.message)
   }
@@ -568,6 +586,7 @@ avatarFileInput.addEventListener('change', function () {
 
 // 初始化
 initUserConfig()
+initLocalMessages()
 fetchMessages()
 fetchNoticeContent()
 fetchOnlineUsers()
