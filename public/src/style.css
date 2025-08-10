@@ -343,7 +343,6 @@ body {
 .message-attachment .file-preview {
   color: #ff00ea;
   text-align: center;
-  text-decoration: none;
   cursor: pointer;
   margin: 15px auto;
   padding: 5px 5px;
