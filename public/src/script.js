@@ -121,7 +121,7 @@ function displayMessage(message, isSelf = false) {
         const fileType = getFileTypeIcon(attachment.name.split('.').pop())
         msgContent += `
                         <div class="message-attachment">
-                            <a href="${SRC_URL}${attachment.url}" target="_blank" class="file-preview">
+                            <a href="${SRC_URL}${attachment.url}" target="_blank" class="file-preview links">
                                 <i class="fas fa-${fileType.icon}" style="color: ${fileType.color};font-size:30px;"></i>
                                 <p>${attachment.name}</p>
                             </a>

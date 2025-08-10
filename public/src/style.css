@@ -341,7 +341,12 @@ body {
 }
 
 .message-attachment .file-preview {
-  padding: 10px;
+  color: #ff00ea;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 15px auto;
+  padding: 0 5px;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -748,11 +753,9 @@ body {
 
 a {
   color: #ff00ea;
-  display: block;
-  text-align: center;
+  display: flex;
   text-decoration: none;
   cursor: pointer;
-  margin: 2rem auto;
 }
 .sys_msg {
   color: pink;
