@@ -3,7 +3,7 @@
 
 
 
-**一个Demo：[聊天室](https://mc-jp.woshisb.eu.org:3022/)**
+**一个Demo：[聊天室](https://chat.qaqq.top/)**
 
 
 
