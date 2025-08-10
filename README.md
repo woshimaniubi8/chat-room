@@ -3,7 +3,7 @@
 
 
 
-**一个Demo：[聊天室](https://chat.qqaq.top/)**
+**一个Demo：<a href="https://chat.qqaq.top/" target="_blank">在线聊天室Demo</a>**
 
 
 
