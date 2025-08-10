@@ -1,9 +1,9 @@
 # chat-room
 基于Node.js与屎山代码构建的在线公共聊天室
 
+**English**：[README-en.md](README-en.md)
 
-
-**一个Demo：<a href="https://chat.qqaq.top/" target="_blank">在线聊天室Demo</a>**
+**一个Demo**：[在线聊天室Demo](https://chat.qqaq.top/)
 
 
 
@@ -13,20 +13,16 @@
 
 ## 快速入门
 
-
-
-1.拉取存储库
+1. **拉取存储库**
 
 ```shell
 git pull https://github.com/woshimaniubi8/chat-room
 cd chat-room
 ```
 
+2. **安装运行环境**
 
-
-2.安装运行环境
-
-Ubuntu/Debian :
+**Ubuntu/Debian** :
 
 ```shell
 sudo apt update
@@ -34,17 +30,17 @@ sudo apt install npm nodejs
 npm i
 ```
 
-Windows :
+**Windows** :
 
-打开Node.js下载地址，下载对应版本的软件 : [Node.js — Download Node.js®](https://nodejs.org/en/download)
+1. 打开Node.js下载地址，下载对应版本的软件 : [Node.js — Download Node.js®](https://nodejs.org/en/download)
 
-确保配置好环境变量与npm，执行：
+2. 确保配置好环境变量与npm，执行：
 
 ```shell
 npm i
 ```
 
-3.修改运行参数
+3. **修改运行参数**
 
 `script.js` :
 
@@ -89,7 +85,7 @@ if (ENABLE_HTTPS) { //第16行 启用ssl需进行配置
 
 
 
-4.运行
+4. **运行**
 
 ```shell
 npm run start
@@ -117,6 +113,7 @@ $ npm run start
 ## 附加声明
 
 背景图来源：[Nachoneko Wallpapers - Wallpaper Cave](https://wallpapercave.com/nachoneko-wallpapers)
+
 内置字体：[Xiaomi - Misans](https://hyperos.mi.com/font/download)
 
-目前，经测试 `AdGuard` 浏览器扩展有概率会导致 `Websocket` 被拦截，若出现此类问题请尝试暂停拦截
+⚠️ 目前，经测试 `AdGuard` 浏览器扩展有概率会导致 `Websocket连接` 被拦截，若出现此类问题请尝试暂停拦截
