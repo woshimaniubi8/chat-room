@@ -3,7 +3,7 @@
 
 
 
-**一个Demo：[聊天室](https://chat.qaqq.top/)**
+**一个Demo：[聊天室](https://chat.qqaq.top/)**
 
 
 
