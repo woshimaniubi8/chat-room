@@ -23,16 +23,11 @@
 
 body {
   background-color: #e5e5e5;
-  background-image: url('nachako.jpg');
-  /* 背景图垂直、水平均居中 */
+  background-image: url('bg-pc.jpg');
   background-position: center center;
-  /* 背景图不平铺 */
   background-repeat: no-repeat;
-  /* 当内容高度大于图片高度时，背景图像的位置相对于viewport固定 */
   background-attachment: fixed;
-  /* 让背景图基于容器大小伸缩 */
   background-size: cover;
-  /* 设置背景颜色，背景图加载过程中会显示背景色 */
   background-color: #464646;
   color: var(--text-color);
   -webkit-box-sizing: border-box;
@@ -43,6 +38,40 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.footer-a {
+  display: flex;
+  color: var(--text-light);
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+  margin: auto;
+  padding-right: 10px;
+}
+.footer-a a {
+  margin-left: 5px;
+}
+.footer-a:hover a {
+  color: var(--primary-color);
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.footer {
+  position: fixed;
+  display: flex;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: var(--text-color);
+  background-color: rgba(255, 255, 255, 0);
+  /* backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px); */
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+  color: var(--text-light);
 }
 
 .chat-container {
@@ -213,7 +242,7 @@ body {
 
 .messages {
   flex: 1;
-  min-height: 0; /* 关键修复 - 允许容器收缩 */
+  min-height: 0;
   overflow-y: auto;
   padding: 20px;
   /* background-color: var(--chat-bg);
@@ -721,7 +750,6 @@ a {
   color: #ff00ea;
   display: block;
   text-align: center;
-  /* font-size: 26px; */
   text-decoration: none;
   cursor: pointer;
   margin: 2rem auto;
@@ -736,7 +764,7 @@ a {
 /* 响应式设计 */
 @media (max-width: 800px) {
   body {
-    background-image: url('nachako-m.jpg');
+    background-image: url('bg-mobile.jpg');
     background-size: cover;
     background-position: center;
   }
@@ -750,7 +778,7 @@ a {
 
   .sidebar {
     width: 100%;
-    flex-shrink: 0; /* 防止侧边栏压缩 */
+    flex-shrink: 0;
     flex-direction: row;
     padding: 10px;
     align-items: center;
@@ -774,21 +802,21 @@ a {
   .message {
     max-width: 100%;
   }
-  /* 新增以下样式 */
+
   .chat-area {
     flex: 1;
-    min-height: 0; /* 关键：允许flex容器收缩 */
+    min-height: 0;
     display: flex;
     flex-direction: column;
   }
 
   .messages {
     flex: 1;
-    min-height: 0; /* 关键：允许滚动区域收缩 */
+    min-height: 0;
     overflow-y: auto;
   }
 
   .message-input {
-    flex-shrink: 0; /* 防止输入框被压缩 */
+    flex-shrink: 0;
   }
 }

@@ -1,5 +1,5 @@
 # chat-room
-基于Node.js与HTML构建的在线公共聊天室
+基于Node.js与屎山代码构建的在线公共聊天室
 
 
 
@@ -11,7 +11,7 @@
 
 ![MOB](public/mob-screen.png)
 
-## 入门
+## 快速入门
 
 
 
@@ -34,13 +34,21 @@ sudo apt install npm nodejs
 npm i
 ```
 
+Windows :
 
+打开Node.js下载地址，下载对应版本的软件 : [Node.js — Download Node.js®](https://nodejs.org/en/download)
+
+确保配置好环境变量与npm，执行：
+
+```shell
+npm i
+```
 
 3.修改运行参数
 
 `script.js` :
 
-修改 `SRC_URL` 和 `WS_URL`
+修改 `SRC_URL` 和 `WS_URL` 为你的服务器地址，通常可留空
 
 ```javascript
 // 文件名: script.js
@@ -63,7 +71,7 @@ const electron_build = false // 是否为electron构建
 
 修改 `ENABLE_HTTPS` 和 `PORT`
 
-若启用HTTPS，需配置SSL证书
+若启用HTTPS( `ENABLE_HTTPS=true` )，需配置SSL证书
 
 ```javascript
 ...
@@ -98,7 +106,7 @@ $ npm run start
 服务器运行在 http://localhost:3000
 ```
 
-根据终端输出在浏览器打开相应地址即可
+根据终端输出在浏览器打开相应地址即可，默认服务端口为 `3000`
 
 在浏览器打开 `服务器地址\message_manage` 可进入信息管理界面
 
@@ -109,3 +117,6 @@ $ npm run start
 ## 附加声明
 
 背景图来源：[Nachoneko Wallpapers - Wallpaper Cave](https://wallpapercave.com/nachoneko-wallpapers)
+内置字体：[Xiaomi - Misans](https://hyperos.mi.com/font/download)
+
+目前，经测试 `AdGuard` 浏览器扩展有概率会导致 `Websocket` 被拦截，若出现此类问题请尝试暂停拦截
